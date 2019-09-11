@@ -30,6 +30,10 @@ padding : 1%;
 color: 003100;
 background-color : white;
 width : 70%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 .rightdiv
 {
