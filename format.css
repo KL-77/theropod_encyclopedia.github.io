@@ -38,6 +38,7 @@ padding : 1%;
 color: white;
 background-color : white;
 width : 20%;
+background-image : url("static/spinohead.jpg")
 }
 .button1 {
   background-color: #006ad6;
