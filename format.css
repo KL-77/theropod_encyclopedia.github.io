@@ -29,7 +29,7 @@ float: left;
 padding : 1%;
 color: 003100;
 background-color : white;
-width : 900px;
+width : 70%;
 }
 .rightdiv
 {
@@ -37,7 +37,7 @@ float: right;
 padding : 1%;
 color: white;
 background-color : white;
-width : 250px;
+width : 20%;
 }
 .button1 {
   background-color: #006ad6;
