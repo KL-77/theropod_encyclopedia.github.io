@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel = "shortcut icon" href = "static/TEtitle.png">
+<title>Theropod Quiz</title>
+<link rel = "stylesheet" href = "format.css">
+</head>
+<body bgcolor = "#ccffff">
+<font face = "Avenir Next">
+<ul>
+  <li><img src = "static/TElogo.png" height = "65" width = "200">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Cladogrampage.html">Cladogram</a></li>
+  <li><a href="Otherpages.html">Other Pages</a></li>
+  <li><a href="About.html">About</a></li>
+</ul>
+<BR><BR><BR><BR>
+<font face = "Avenir Next" color = "#005500">
+<h1></h1>
+<br>
+<div class = "leftdiv">
+<h2>Radio Buttons</h2>
+
+<form name = "f1">
+  <input name = "l" type = "text">Enter</input>
+  <input name = "n" type="radio" value="male" id = "button1"> Male<br>
+  <input name = "n" type="radio" value="female" id = "button2"> Female<br>
+  <input name = "n" type="radio" value="other" id = "button3"> Other 
+</form> 
+<br>
+<button onclick = "myfunc()">submit</button>
+<p id = "hi"></p>
+<script>
+var button1 = document.getElementById("button1");
+var button2 = document.getElementById("button2");
+var button3 = document.getElementById("button3");
+function myfunc() {
+    if (button1.checked){
+        document.getElementById("hi").innerHTML = "you have chosen male";
+    }
+    else if (button2.checked) {
+        document.getElementById("hi").innerHTML = "you have chosen female";
+    }
+    else if (button3.checked) {
+        document.getElementById("hi").innerHTML = "you have chosen other";
+}
+</script>
+</div>
+</body>
+</html>
