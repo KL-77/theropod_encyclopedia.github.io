@@ -15,35 +15,67 @@
 </ul>
 <BR><BR><BR><BR>
 <font face = "Avenir Next" color = "#005500">
-<h1></h1>
+<h1>Theropod Quiz</h1>
 <br>
 <div class = "leftdiv">
-<h2>Radio Buttons</h2>
+<p>
+This is a quiz on Theropods consisting of 6 questions. After you are done, click the submit button and immediately view the answers. Good luck!
+<br><br>
+<b>Q1. What does 'Theropod' mean?</b>
+<fieldset>
+<input type="radio" name="r" value="1" id="q1a1"> Terrible feet<br>
+<input type="radio" name="r" value="2" id="q1a2"> Beast feet<br>
+<input type="radio" name="r" value="3" id="q1a3"> Lizard feet<br>
+</fieldset>
+<p id = "q1"></p>
+<br><br>
+  
+<b>Q2. Which clade does Afrovenator belong to?</b>
+<fieldset>
+<input type="radio" name="r1" value="4" id="q2a1"> Megalosauroidea<br>
+<input type="radio" name="r1" value="5" id="q2a2"> Carnosauria<br>
+<input type="radio" name="r1" value="6" id="q2a3"> Tyrannosauria<br>
+</fieldset>
+<p id = "q2"></p>
+<br><br>
+  
+<b>Q3. The Theropods of which clade had thin, serrated teeth?</b>
+<fieldset>
+<input type="radio" name="r2" value="7" id="q3a1"> Megalosauroidea<br>
+<input type="radio" name="r2" value="8" id="q3a2"> Carnosauria<br>
+<input type="radio" name="r2" value="9" id="q3a3"> Tyrannosauria<br>
+</fieldset>
+<p id = "q3"></p>
+<br><br>
 
-<form name = "f1">
-  <input name = "l" type = "text">Enter</input>
-  <input name = "n" type="radio" value="male" id = "button1"> Male<br>
-  <input name = "n" type="radio" value="female" id = "button2"> Female<br>
-  <input name = "n" type="radio" value="other" id = "button3"> Other 
-</form> 
-<br>
-<button onclick = "myfunc()">submit</button>
-<p id = "hi"></p>
 <script>
-var button1 = document.getElementById("button1");
-var button2 = document.getElementById("button2");
-var button3 = document.getElementById("button3");
-function myfunc() {
-    if (button1.checked){
-        document.getElementById("hi").innerHTML = "you have chosen male";
-    }
-    else if (button2.checked) {
-        document.getElementById("hi").innerHTML = "you have chosen female";
-    }
-    else if (button3.checked) {
-        document.getElementById("hi").innerHTML = "you have chosen other";
-}
-</script>
-</div>
-</body>
-</html>
+function check() {
+  // Question 1
+  if (document.getElementById("q1a1").checked) {
+    document.getElementById("q1").innerHTML = "Wrong! Correct answer: Beast Feet";
+  }else if (document.getElementById("q1a2").checked) {
+    document.getElementById("q1").innerHTML = "Correct!";
+  }else if (document.getElementById("q1a3").checked) {
+    document.getElementById("q1").innerHTML = "Wrong! Correct answer: Beast Feet";
+  // Question 2
+  if (document.getElementById("q2a1").checked) {
+    document.getElementById("q2").innerHTML = "Correct!";
+  }else if (document.getElementById("q2a2").checked) {
+    document.getElementById("q2").innerHTML = "Wrong! Correct answer: Beast Feet";
+  }else if (document.getElementById("q2a3").checked) {
+    document.getElementById("q2").innerHTML = "Wrong! Correct answer: Beast Feet";
+  // Question 3
+  if (document.getElementById("q3a1").checked) {
+    document.getElementById("q3").innerHTML = "Wrong! Correct answer: Beast Feet";
+  }else if (document.getElementById("q3a2").checked) {
+    document.getElementById("q3").innerHTML = "Correct!";
+  }else if (document.getElementById("q3a3").checked) {
+    document.getElementById("q3").innerHTML = "Wrong! Correct answer: Beast Feet";
+  }
+  </script>
+  <button class = "button2" onclick = "check()">submit</button>
+  </p>
+  </div>
+  </body>
+  </html>
+  
